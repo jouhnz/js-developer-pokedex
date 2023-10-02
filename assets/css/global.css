@@ -7,6 +7,19 @@ body {
     background-color: #f6f8fc;
 }
 
+.pokedex {
+    width: 50px;
+}
+
+.icon-pokedex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
 .content {
     width: 100vw;
     height: 100vh;

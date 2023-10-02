@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
+    <link rel="icon" href="/assets/images/icon-pokeball.png">
 
     <!-- Normalize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -25,22 +26,34 @@
 <body>
     <section class="content">
         <h1>Pokedex</h1>
+        <div class="icon-pokedex">
+            <img class="pokedex" src="/assets/images/icon-pokedex.png" alt="Pokebola">
+        </div>
 
-        <ol id="pokemonList" class="pokemons">
+        <ol id="pokemonList" class="pokemons">  <!-- ID criado para vir um elemento só, que é o ID da lista -->
             <!-- ..... Pokemons here ..... -->
         </ol>
 
+            <!-- Load button -->
         <div class="pagination">
             <button id="loadMoreButton" type="button">
                 Load More
             </button>
         </div>
+            <!-- Reload button-->
+        <button id="reloadButton" type="button">
+            Reload
+        </button>
     </section>
 
-    <!-- Nosso JS -->
+    <div id="fade"></div>
+    <div id="modal" class="hide"></div>
+
+    <!-- JS -->
     <script src="/assets/js/pokemon-model.js"></script>
     <script src="/assets/js/poke-api.js"></script>
     <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/modal.js"></script>
 </body>
 
 </html>
